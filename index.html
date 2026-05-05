@@ -3,32 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="All-in-One Calculator is an iOS app with basic, scientific, unit conversion, GST, EMI, and age calculator tools." />
+  <meta name="description" content="All-in-One Calculator is an iOS app with basic calculator, scientific calculator, unit converter, GST calculator, EMI calculator, and age calculator tools." />
   <title>All-in-One Calculator</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <header class="hero">
     <nav class="nav">
-      <div class="brand">All-in-One Calculator</div>
-      <a href="privacy.html" class="nav-link">Privacy Policy</a>
+      <a class="brand" href="./index.html">All-in-One Calculator</a>
+      <a href="./privacy.html" class="nav-link">Privacy Policy</a>
     </nav>
 
     <section class="hero-content">
       <div>
         <p class="eyebrow">iOS Calculator App</p>
-        <h1>Fast, clean, everyday calculators in one app.</h1>
+        <h1>Everyday calculators in one clean app.</h1>
         <p class="hero-text">
-          All-in-One Calculator brings essential calculation tools into one simple iOS app,
-          including basic math, scientific calculations, unit conversion, GST, EMI, and age calculation.
+          All-in-One Calculator brings essential tools into one simple iOS app, including basic math,
+          scientific calculations, unit conversions, GST, EMI, and age calculations.
         </p>
         <div class="actions">
           <a href="#features" class="button primary">Explore Features</a>
-          <a href="privacy.html" class="button secondary">Privacy Policy</a>
+          <a href="./privacy.html" class="button secondary">Privacy Policy</a>
         </div>
       </div>
 
-      <div class="phone-card">
+      <div class="phone-card" aria-label="App preview">
         <div class="screen">
           <div class="screen-header">All-in-One</div>
           <div class="grid">
@@ -48,54 +48,35 @@
     <section id="features" class="section">
       <h2>Built for daily use</h2>
       <p class="section-subtitle">
-        Designed with a simple interface, responsive layouts, and practical calculators for everyday needs.
+        Fast, private, and easy-to-use calculators designed for iPhone and iPad.
       </p>
 
       <div class="feature-grid">
-        <article class="card">
-          <h3>Basic Calculator</h3>
-          <p>Perform simple arithmetic calculations with clean input and result handling.</p>
-        </article>
-
-        <article class="card">
-          <h3>Scientific Calculator</h3>
-          <p>Use trigonometric, logarithmic, square root, power, constants, and parentheses-based calculations.</p>
-        </article>
-
-        <article class="card">
-          <h3>Unit Converter</h3>
-          <p>Convert length, area, volume, temperature, weight, time, speed, pressure, energy, power, and data units.</p>
-        </article>
-
-        <article class="card">
-          <h3>GST Calculator</h3>
-          <p>Add or remove GST, view CGST and SGST breakdowns, and copy the final result.</p>
-        </article>
-
-        <article class="card">
-          <h3>EMI Calculator</h3>
-          <p>Calculate EMI, total interest, total payment, and view an amortization schedule.</p>
-        </article>
-
-        <article class="card">
-          <h3>Age Calculator</h3>
-          <p>Calculate age in years, months, days, total days, and next birthday details.</p>
-        </article>
+        <article class="card"><h3>Basic Calculator</h3><p>Simple arithmetic with clean input and result handling.</p></article>
+        <article class="card"><h3>Scientific Calculator</h3><p>Trigonometry, logarithms, square root, power, constants, and parentheses.</p></article>
+        <article class="card"><h3>Unit Converter</h3><p>Convert length, area, volume, temperature, weight, time, speed, pressure, energy, power, and data units.</p></article>
+        <article class="card"><h3>GST Calculator</h3><p>Add or remove GST with CGST and SGST breakdowns.</p></article>
+        <article class="card"><h3>EMI Calculator</h3><p>Calculate EMI, total interest, total payment, and amortization details.</p></article>
+        <article class="card"><h3>Age Calculator</h3><p>Calculate age, total days, next birthday, and days remaining.</p></article>
       </div>
     </section>
 
     <section class="section privacy-callout">
       <h2>Privacy-first by design</h2>
       <p>
-        All calculations are performed on the device. The app does not require account creation,
+        Calculations are performed on your device. The app does not require account creation,
         does not track users, and does not sell personal data.
       </p>
-      <a href="privacy.html" class="button primary">Read Privacy Policy</a>
+      <a href="./privacy.html" class="button primary">Read Privacy Policy</a>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 All-in-One Calculator. All rights reserved.</p>
+    <p>© <span id="year"></span> All-in-One Calculator. All rights reserved.</p>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
