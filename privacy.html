@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for All-in-One Calculator iOS app." />
+  <title>Privacy Policy | All-in-One Calculator</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="policy-header">
+    <nav class="nav">
+      <a href="./index.html" class="brand">All-in-One Calculator</a>
+      <a href="./index.html" class="nav-link">Home</a>
+    </nav>
+
+    <div class="policy-title">
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: <span id="last-updated"></span></p>
+    </div>
+  </header>
+
+  <main class="policy-container">
+    <section class="policy-card">
+      <h2>Overview</h2>
+      <p>
+        All-in-One Calculator is designed as a privacy-friendly calculator app. The app provides
+        basic calculator, scientific calculator, unit converter, GST calculator, EMI calculator,
+        and age calculator features.
+      </p>
+      <p>
+        We do not collect, sell, rent, or share personal information. Calculations are performed locally on your device.
+      </p>
+    </section>
+
+    <section class="policy-card">
+      <h2>Information We Collect</h2>
+      <p>
+        The app does not collect personal information. It does not require account creation, login,
+        email address, phone number, location, contacts, photos, or payment details.
+      </p>
+    </section>
+
+    <section class="policy-card">
+      <h2>Local Data Stored on Your Device</h2>
+      <p>
+        The app may store limited preferences locally on your device, such as selected theme,
+        recent calculations, or calculation history. This data stays on your device and is not transmitted to us.
+      </p>
+      <p>
+        You can clear available history inside the app, or remove all locally stored app data by deleting the app.
+      </p>
+    </section>
+
+    <section class="policy-card">
+      <h2>Data Sharing</h2>
+      <p>
+        We do not share user data with third parties. The app does not include advertising networks,
+        tracking tools, or third-party analytics services.
+      </p>
+    </section>
+
+    <section class="policy-card">
+      <h2>Internet Access</h2>
+      <p>
+        The current version of All-in-One Calculator does not require internet access for its core calculator features.
+        All calculations are handled locally on the device.
+      </p>
+    </section>
+
+    <section class="policy-card">
+      <h2>Children’s Privacy</h2>
+      <p>
+        The app does not knowingly collect personal information from children or any other users.
+      </p>
+    </section>
+
+    <section class="policy-card">
+      <h2>Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy if app functionality changes. The updated date on this page
+        will automatically reflect the latest page update date when hosted.
+      </p>
+    </section>
+
+    <section class="policy-card">
+      <h2>Contact</h2>
+      <p>
+        For privacy questions, contact us at:
+        <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> All-in-One Calculator. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const formatDate = (date) => {
+      return new Intl.DateTimeFormat("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      }).format(date);
+    };
+
+    document.getElementById("last-updated").textContent = formatDate(new Date(document.lastModified));
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
